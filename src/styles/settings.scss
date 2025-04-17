@@ -1,0 +1,39 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+@use 'vuetify/settings' with (
+  $utilities: (
+    "height": (
+      property: height,
+      responsive: true,
+      class: h,
+      values: (
+        screen-header: calc(100vh - 96px),
+      )
+    ),
+    "width": (
+      property: width,
+      responsive: true,
+      class: w,
+      values: (
+        auto: auto,
+        0: 0,
+        25: 25%,
+        33: 33%,
+        50: 50%,
+        66: 66%,
+        75: 75%,
+        80: 80%,
+        85: 85%,
+        90: 90%,
+        95: 95%,
+        98: 98%,
+        100: 100%
+      )
+    )
+  )
+)
