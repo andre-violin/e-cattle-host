@@ -66,7 +66,8 @@
   "author": {
     "name": "Jane Doe",
     "email": "doe.jane@email.com",
-    "url": "https://localhost:5173"
+    "url": "https://localhost:5173",
+    "_commnent": "Altrar a chav url para o endereço correto da imagem"
   },
-  "license": "ISC"
+  "license": "MT"
 }

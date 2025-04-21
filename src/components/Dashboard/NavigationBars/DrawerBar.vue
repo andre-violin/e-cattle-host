@@ -55,7 +55,7 @@ const listItems = ref([
     icon: 'mdi-sprout',
     title: 'Aplicação Remota 1',
     url: '/dashboard/remote_app1',
-    value: 'remote_app1',
+    value: 'remoteapp1',
     action: toggleAppBarTitle,
     show: !appIsRegistered.value
   },

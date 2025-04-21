@@ -1,10 +1,10 @@
 <template>
-  <ComponenteApp1 v-if="!!ComponenteApp1" />
+  <ComponentApp1 v-if="!!ComponentApp1" />
 </template>
 
 <script setup>
 import { defineAsyncComponent } from 'vue'
-const ComponenteApp1 = defineAsyncComponent(
-  () => import('remote_app1/ComponenteApp1')
+const ComponentApp1 = defineAsyncComponent(
+  () => import('remote_app1/ComponentApp1')
 )
 </script>

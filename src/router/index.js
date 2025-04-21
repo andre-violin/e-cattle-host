@@ -14,22 +14,8 @@ const router = createRouter({
   extendRoutes: setupLayouts
 })
 
-// router.beforeEach((to, from, next) => {
-//   const loggedInUser = useUserStore().getLoggedInUser()
-
-//   if (!loggedInUser && to.matched[0].path === '/dashboard') {
-//     next('/')
-//   } else if (loggedInUser && to.name === '/') {
-//     next('/dashboard/apphome')
-//   }
-//   next()
-// })
-
 router.beforeResolve((to, from) => {
-  // const appToken = !!storeAppToken.tokenApplication
   const loggedInUser = useUserStore().getLoggedInUser()
-
-  // const loggedInUser = !!localStorage.getItem('loggedInUser')
 
   if (loggedInUser && to.name === '/') {
     return { path: 'dashboard/apphome' }
