@@ -106,4 +106,4 @@ No final, abra um *Pull Request* explicando o problema resolvido ou a funcionali
 
 ## Licença 📃
 
-Este projeto está sob a licença [MIT](./../LICENSE) license
+Este projeto está sob a licença [MIT](./LICENSE) license
